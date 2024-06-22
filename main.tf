@@ -11,7 +11,7 @@ dynamic "ingress" {
         from_port = ingress.value["from_port"]
         to_port = ingress.value["to_port"]
         protocol = ingress.value["protocal"]
-        cidr_blocks = ingress.value["cidr_block"]
+        cidr_blocks = ingress.value["cidr_blocks"]
       }
 
     }
@@ -24,7 +24,7 @@ dynamic "ingress" {
         from_port = egress.value["from_port"]
         to_port = egress.value["to_port"]
         protocol = egress.value["protocal"]
-        cidr_blocks = egress.value["cidr_block"]
+        cidr_blocks = egress.value["cidr_blocks"]
       }
 
     }
